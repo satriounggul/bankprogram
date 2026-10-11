@@ -49,9 +49,26 @@ public class Main {
 
         System.out.println("");
 
-        // Demonstrasi menampilkan 
+        // Demonstrasi menampilkan access modifier terlarang.
+
+        // Private : atribut saldo hanya bisa diakses pada class Rekening.
         // System.out.println(rekening.saldo);
+
+        // Private : atribut saldo tidak bisa diubah secara langsung, harus melalui method yang disediakan.
+        // rekening.saldo = 1000000;
+
+        // Private : atribut namaPemilik hanya bisa diakses pada class Rekening.
+        // System.out.println(rekening.namaPemilik);        
+
+        // Default : atribut kodeCabang hanya bisa diakses pada package bank.
         // System.out.println(rekening.kodeCabang);
+
+        // Default : atribut kodeCabang tidak bisa diubah secara langsung di luar package bank.
+        // rekening.kodeCabang = "PTN82";
+
+        // Protected : method hitungBonus() hanya dapat diakses pada package yang sama atau oleh subclassnya.
         // System.out.println(prioritas.hitungBonus());
+
+        // Protected : objek Rekening hanya dapat diakses pada package yang sama atau oleh subclassnya
     }
 }
